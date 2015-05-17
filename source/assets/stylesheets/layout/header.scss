@@ -1,0 +1,52 @@
+.header {
+  background-color: $header-bg;
+  border-bottom: 1px solid #DCDCDC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .top-row {
+    height: 60px;
+
+    a {
+      line-height: $header-height + 50px;
+    }
+  }
+
+  .bottom-row {
+    height: 60px;
+
+    a {
+      line-height: $header-height;
+    }
+  }
+
+  &-logo {
+    color: $header-name-color;
+    font-family: $font-family-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &-nav {
+    ul {
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 10px;
+    }
+  }
+
+  &-link {
+    color: $header-link-color;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
